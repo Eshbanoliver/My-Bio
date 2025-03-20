@@ -17,18 +17,20 @@ body {
 
 /* Header */
 header {
+    
     background: rgba(106, 13, 173, 0.6);
     color: white;
     text-align: center;
     padding: 20px;
     top: 0;
-    width: 100%;
+    max-width: 100%;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     transition: background 0.3s ease-in-out;
-    position: fixed;
-    z-index: 1000;
+    
+    
 }
+
 
 /* Change Header Background on Scroll */
 .scrolled {
@@ -37,27 +39,25 @@ header {
 
 /* Navigation Bar */
 nav {
+    
     text-align: center;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     padding: 10px;
     top: 70px;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
+    max-width: 100%;
+    transition: background 0.3s ease-in-out;
+    
 }
 
-/* Navigation List */
+
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
     margin: 0 15px;
 }
 
@@ -69,7 +69,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: #ffd700; /* Gold */
 }
 
 /* Smooth Scroll */
@@ -81,7 +81,7 @@ html {
 section {
     width: 80%;
     margin: 20px auto;
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -90,9 +90,9 @@ section {
 
 /* Hover Effect for Sections */
 section:hover {
-    background-color: rgba(255, 255, 255, 1);
-    transform: scale(1.03);
-    box-shadow: 0 0 15px rgba(106, 13, 173, 0.3);
+    background-color: rgba(255, 255, 255, 1); /* Fully visible on hover */
+    transform: scale(1.03); /* Slight Zoom Effect */
+    box-shadow: 0 0 15px rgba(106, 13, 173, 0.3); /* Purple Glow */
 }
 
 /* List Styling */
@@ -163,57 +163,4 @@ footer:hover {
 /* Hover Effect for Button */
 #darkModeToggle:hover {
     background: #ffbf00;
-}
-
-/* === 📱 MOBILE RESPONSIVENESS === */
-
-/* ✅ Adjust navigation for small screens */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    section {
-        width: 90%;
-        padding: 15px;
-    }
-
-    header {
-        padding: 15px;
-        font-size: 18px;
-    }
-
-    nav {
-        padding: 5px;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
-}
-
-/* ✅ Optimize layout for extra small screens */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 22px;
-    }
-
-    h2 {
-        font-size: 18px;
-    }
-
-    p, ul li {
-        font-size: 14px;
-    }
-
-    #darkModeToggle {
-        padding: 8px 15px;
-        font-size: 14px;
-    }
 }
