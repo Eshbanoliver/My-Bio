@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+/* Header */
+header {
+    
+    background: rgba(106, 13, 173, 0.6);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    top: 0;
+    max-width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: background 0.3s ease-in-out;
+    
+    
+}
+
+
+/* Change Header Background on Scroll */
+.scrolled {
+    background: rgba(75, 0, 130, 0.8);
+}
+
+/* Navigation Bar */
+nav {
+    
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    top: 70px;
+    max-width: 100%;
+    transition: background 0.3s ease-in-out;
+    
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Gold */
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Sections */
+section {
+    width: 80%;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for Sections */
+section:hover {
+    background-color: rgba(255, 255, 255, 1); /* Fully visible on hover */
+    transform: scale(1.03); /* Slight Zoom Effect */
+    box-shadow: 0 0 15px rgba(106, 13, 173, 0.3); /* Purple Glow */
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 5px solid #6a0dad;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect for List Items */
+ul li:hover {
+    background-color: #d8b9f8;
+    transform: scale(1.02);
+}
+
+/* Contact Section */
+#contact p {
+    font-size: 1.1em;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #6a0dad;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Hover Effect for Links */
+#contact a:hover {
+    color: #4b0082;
+}
+
+/* Footer */
+footer {
+    background: rgba(75, 0, 130, 0.6);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Hover Effect */
+footer:hover {
+    background: rgba(75, 0, 130, 0.8);
+}
+
+/* Dark Mode Button */
+#darkModeToggle {
+    background: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+/* Hover Effect for Button */
+#darkModeToggle:hover {
+    background: #ffbf00;
+}
